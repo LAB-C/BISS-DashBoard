@@ -1,7 +1,6 @@
 .TransectionList{
-    float: left;
+    float: right;
     padding: 20px 40px 10px 40px;
     background-color: #fff;
     margin-top: 60px;
-    margin-left: 80px;
 }

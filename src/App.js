@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Profile from './Profile';
 import Logo from "./img/Logo.png";
 import './css/App.css';
-import Dashboard from "./Dashboard/Dashboard";
 import NodePage from "./Pages/NodePage";
 import DevicePage from "./Pages/DevicePage";
+import Picture from './img/Profile.jpg';
+import './css/Profile.css';
+import Graph from "./Dashboard/Graph/Graph";
+import SensorList from "./Dashboard/Sensor/SensorList";
+import DeviceList from "./Dashboard/Device/DeviceList";
+import NodeList from "./Dashboard/Node/NodeList";
+import TransectionList from "./Dashboard/Transection/TransectionList";
 
 const nodeData = [
     ["1", "Arduino Uno R3", "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c", "iPad Pro"],
@@ -29,19 +34,30 @@ const dPage = deviceData.map(dp => (<Link to path={/DevicePage/ + dp[0]}><Device
 console.log(dPage);
 class App extends Component {
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
             <a href="/"><img className="Logo" src={Logo} alt="Logo" /></a>
           <nav>
-              <Profile />
+              <div className="Profile">
+                  <img src={Picture} alt={"gtg7784"} />
+                  <p>
+                      <span>고태건</span>(gtg7784)
+                      <i className="fas fa-caret-down fa-2x" /><br/>
+                      용인신릉중학교
+                  </p>
+              </div>
           </nav>
         </header>
           <BrowserRouter>
               <div className="content">
-                  <Route exact path="/" component={Home}/>
-                  <Route exact path={/NodePage/} component={nPage}/>
-                  <Route exact path={/DevicePage/} component={dPage}/>
+                  <h1><span>대시보드</span> DashBoard</h1>
+                  <Graph />
+                  <SensorList /> <br/>
+                  <DeviceList />
+                  <NodeList />
+                  <TransectionList />
               </div>
           </BrowserRouter>
 
@@ -50,9 +66,4 @@ class App extends Component {
   }
 }
 
-function Home() {
-    return(
-     <Dashboard />
-    );
-}
 export default App;
