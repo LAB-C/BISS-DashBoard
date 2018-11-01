@@ -1,0 +1,79 @@
+.Graph{
+    float: left;
+    background: #ffffff;
+    padding: 20px 30px 10px 30px;
+    box-shadow: 1px 1px 100px -20px #f7f7f7;
+}
+
+h2{
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+h2 span{
+    font-weight: 800;
+}
+
+span{
+    font-size: 11pt;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.SensorList{
+    margin-left: 60px;
+    float: right;
+    padding: 20px 40px 10px 40px;
+    background-color: #fff;
+}
+
+.Sensor{
+    font-size: 7pt;
+    width: 300px;
+}
+
+.DeviceList{
+    float: left;
+    padding: 20px 40px 10px 40px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.Device{
+    width: 300px;
+}
+
+.NodeList{
+    float: left;
+    padding: 20px 40px 10px 40px;
+    background-color: #fff;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.Node{
+    width: 300px;
+}
+
+.TransectionList{
+    float: right;
+    padding: 20px 40px 10px 40px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.Transection{
+    width: 300px;
+}
+
+
+

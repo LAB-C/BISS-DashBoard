@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/NodePage.css';
+import '../css/Pages.css';
 
 
 class NodeDevice extends Component{

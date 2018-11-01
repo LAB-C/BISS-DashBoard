@@ -16,12 +16,6 @@ header{
   box-shadow: 0px -1px 10000px -20px #f7f7f7;
 }
 
-nav {
-  float: right;
-  min-height: 5vh;
-  display: flex;
-}
-
 h1{
   font-size: 13pt;
   font-weight: 400;
