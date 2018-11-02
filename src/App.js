@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from "./img/Logo.png";
 import Graph from './Graph'
-import Listitem from './Listitem'
+import ListItem from './Listitem'
 import './css/App.css';
 import './css/Profile.css';
 import './css/Dashboard.css'
@@ -18,9 +18,9 @@ class App extends Component {
         this._switch3= this._switch3.bind(this);
         this.state = {
             dashboard: true,
-            dPage_id: "",
-            nPage_id: "",
-            tPage_id: ""
+            dPage_id: false,
+            nPage_id: false,
+            tPage_id: false
         }
     }
 
@@ -41,7 +41,7 @@ class App extends Component {
     _switch3(e){
         this.setState({
             dashboard: false,
-            tPage: true
+            tPage_id: true
         });
     }
   render() {
@@ -52,7 +52,7 @@ class App extends Component {
           ["4", "raspberry pi 3", "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c", "iPhone 6s"]
       ]
 
-      const nData = nodeData.map(nd => (<Listitem type="Node"  onClick={this._switch} nd={nd} />))
+      const nData = nodeData.map(nd => (<ListItem type="Node" onClick={this._switch} nd={nd} />))
 
       const deviceData = [
           ["1", "iPad Pro", "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c", "Arduino Uno R3"],
@@ -60,7 +60,7 @@ class App extends Component {
           ["3", "iPhone 6s", "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c","raspberry pi 3"]
       ]
 
-      const dData = deviceData.map(dd => (<Listitem type="Device" onclick={this._switch} dd={dd}/>))
+      const dData = deviceData.map(dd => (<ListItem type="Device" onclick={this._switch2} dd={dd}/>))
 
 
       const hashData = [
@@ -70,7 +70,7 @@ class App extends Component {
           "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c"
       ]
 
-      const hData = hashData.map(hd => (<Listitem type="Tran" onclick={this._switch} hd={hd}/>))
+      const hData = hashData.map(hd => (<ListItem type="Tran" onclick={this._switch3} hd={hd}/>))
 
       const sensorData = [
           "PM2008 Cubic",
@@ -78,7 +78,7 @@ class App extends Component {
           "Temperature Sensor"
       ]
 
-      const sData = sensorData.map(sd => (<Listitem type="Sensor" onclick={this._switch} sd={sd}/>))
+      const sData = sensorData.map(sd => (<ListItem type="Sensor" onclick={this._switch} sd={sd}/>))
 
       return (
       <div className="App">

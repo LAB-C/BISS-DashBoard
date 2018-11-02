@@ -5,7 +5,7 @@ class DevicePage extends Component{
     render() {
         return (
             <div className="Device">
-                <h1><span>Arduino Uno R3</span>의 트렌젝션</h1>
+                <h1><span>adsf</span>의 트렌젝션</h1>
                 <div className="DeviceContent">
                     <table>
                         <thead>

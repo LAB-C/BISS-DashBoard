@@ -26,7 +26,7 @@ class Listitem extends Component {
     }
     handleChange2(e) {
         this.props.onClick(this.props.nd[0]);
-        console.log(this.props.node[0]);
+        console.log(this.props.nd[0]);
     }
     handleChange3(e) {
         this.props.onClick(this.props.tr);
