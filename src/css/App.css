@@ -39,3 +39,13 @@ a{
 a:hover{
   color: grey;
 }
+
+img{
+  margin-right: 25px;
+}
+p{
+  font-size: 7pt;
+}
+img, p{
+  display: inline-block;
+}

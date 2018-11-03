@@ -3,8 +3,7 @@ import Logo from "./img/Logo.png";
 import Graph from './Graph'
 import ListItem from './Listitem'
 import './css/App.css';
-import './css/Profile.css';
-import './css/Dashboard.css'
+import './css/Dashboard.css';
 import DevicePage from "./Pages/DevicePage";
 import NodePage from "./Pages/NodePage";
 import TranPage from "./Pages/TranPage";
@@ -24,21 +23,21 @@ class App extends Component {
         }
     }
 
-    _switch(e){
+    _switch(){
         this.setState({
             dashboard: false,
             dPage_id: true
         });
     }
 
-    _switch2(e){
+    _switch2(){
         this.setState({
             dashboard: false,
             nPage_id: true
         });
     }
 
-    _switch3(e){
+    _switch3(){
         this.setState({
             dashboard: false,
             tPage_id: true
