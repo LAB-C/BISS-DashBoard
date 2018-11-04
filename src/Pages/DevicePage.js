@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../css/Pages.css';
+import '../css/App.css'
 
 class DevicePage extends Component{
     render() {
         return (
-            <div className="Device">
+            <div className="asdf">
                 <h1><span>adsf</span>의 트렌젝션</h1>
                 <div className="DeviceContent">
                     <table>

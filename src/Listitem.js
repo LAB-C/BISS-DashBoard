@@ -29,8 +29,8 @@ class Listitem extends Component {
         console.log(this.props.nd[0]);
     }
     handleChange3(e) {
-        this.props.onClick(this.props.tr);
-        console.log(this.props.tr);
+        this.props.onClick(this.props.hd);
+        console.log(this.props.hd);
     }
 
     render() {
@@ -39,7 +39,8 @@ class Listitem extends Component {
                 <div onClick={this.handleChange} value={this.props.dd[1]} className="Device">
                     <a>
                         <img src={Phone} alt="Phone" />
-                        <p><span>{this.props.dd[1]}</span>
+                        <p>
+                            <span>{this.props.dd[1]}</span>
                             <br/>
                             {this.props.dd[2].substr(1, 30)}...
                         </p>
@@ -70,7 +71,9 @@ class Listitem extends Component {
             case "Tran" : data=(
                 <div onClick={this.handleChange3} className="Node">
                     <p>
-                        <span>{this.props.hd}</span>
+                        <a>
+                            <span>{this.props.hd}</span>
+                        </a>
                     </p>
                 </div>);
             break;

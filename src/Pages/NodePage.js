@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Pages.css';
-
+import '../css/App.css'
 
 class NodeDevice extends Component{
     render() {
