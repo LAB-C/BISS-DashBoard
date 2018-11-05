@@ -6,7 +6,7 @@ class DevicePage extends Component{
     render() {
         return (
             <div className="asdf">
-                <h1><span>adsf</span>의 트렌젝션</h1>
+                <h1><span>Arduino Uno R3</span>의 트렌젝션</h1>
                 <div className="DeviceContent">
                     <table>
                         <thead>
@@ -18,9 +18,21 @@ class DevicePage extends Component{
                         </thead>
                         <tbody>
                         <tr>
-                            <td className="txhash">{this.props.txhash}</td>
-                            <td className="txto">{this.props.txto}</td>
-                            <td className="txfrom">{this.props.txfrom}</td>
+                            <td className="txhash">0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c</td>
+                            <td className="txto">Arduino UNO R3</td>
+                            <td className="txfrom">iPad Pro</td>
+                        </tr>
+
+                        <tr>
+                            <td className="txhash">0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c</td>
+                            <td className="txto">Arduino UNO R3</td>
+                            <td className="txfrom">iPhone 6s</td>
+                        </tr>
+
+                        <tr>
+                            <td className="txhash">0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c</td>
+                            <td className="txto">Arduino UNO R3</td>
+                            <td className="txfrom">iPhone 6s</td>
                         </tr>
                         </tbody>
                     </table>
