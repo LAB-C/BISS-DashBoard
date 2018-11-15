@@ -2,7 +2,8 @@ Blockchain-  based IoT Security Service
 ========
 
 
-This is "Blockchain based IoT Security Service" that I made in 2018 Jeju Blockchain Hackathon. / LAB-C팀이 2018 제주블록체인해커톤에서 만든 "Blockchain-based IoT Security Service"입니다
+This is "Blockchain based IoT Security Service" what I made in 2018 Jeju Blockchain Hackathon.
+LAB-C팀이 2018 제주블록체인해커톤에서 만든 "Blockchain-based IoT Security Service"입니다
 
 --------
 
