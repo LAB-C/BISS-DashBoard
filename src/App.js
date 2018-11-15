@@ -109,8 +109,8 @@ class App extends Component {
                                   {nData}
                               </div>
                           </div>
-                          <div className="TransectionList">
-                              <h2><span>트렌젝션 목록</span>Transection List</h2>
+                          <div className="TransactionList">
+                              <h2><span>트렌젝션 목록</span>Transaction List</h2>
                               <div className="box">
                                   {hData}
                               </div>
