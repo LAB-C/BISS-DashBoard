@@ -59,7 +59,7 @@ class App extends Component {
           ["3", "iPhone 6s", "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c","raspberry pi 3"]
       ]
 
-      const dData = deviceData.map(dd => (<ListItem type="Device" onclick={this._switch2} dd={dd}/>))
+      const dData = deviceData.map(dd => (<ListItem type="Device" onClick={this._switch2} dd={dd}/>))
 
 
       const hashData = [
@@ -69,7 +69,7 @@ class App extends Component {
           "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c"
       ]
 
-      const hData = hashData.map(hd => (<ListItem type="Tran" onclick={this._switch3} hd={hd}/>))
+      const hData = hashData.map(hd => (<ListItem type="Tran" onClick={this._switch3} hd={hd}/>))
 
       const sensorData = [
           "PM2008 Cubic",

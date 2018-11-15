@@ -6,9 +6,6 @@ import './css/Dashboard.css'
 
 var type;
 var data;
-var dPage;
-var nPage;
-var tPage;
 
 class Listitem extends Component {
 
