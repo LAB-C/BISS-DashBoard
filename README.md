@@ -1,9 +1,9 @@
-Blockchain-  based IoT Security Service
+Blockchain-based IoT Security Service
 ========
 
+`Blockchain based IoT Security Service(BISS)` by LAB-C made in 2018 Jeju Blockchain Hackathon.
 
-This is "Blockchain based IoT Security Service" what I made in 2018 Jeju Blockchain Hackathon.
-LAB-C팀이 2018 제주블록체인해커톤에서 만든 "Blockchain-based IoT Security Service"입니다
+LAB-C팀이 2018 제주블록체인해커톤에서 만든 `Blockchain-based IoT Security Service(BISS)`입니다.
 
 --------
 
